@@ -39,7 +39,7 @@ const Contact = () => {
           <FaLinkedin />
         </a>
         <a 
-          href="mailto:jarr26faa@gmail.com" 
+          href="mailto:fajar@jarr-iannur.web.id" 
           className="hover:text-cyan-400 transition-colors duration-300"
         >
           <FaEnvelope />
