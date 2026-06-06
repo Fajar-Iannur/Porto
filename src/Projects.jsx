@@ -1,5 +1,5 @@
 import React from 'react';
-import imgCustomBook from './assets/CustomBook.png'; 
+import Glomo from './assets/Glomo.png'; 
 import imgSpentApp from './assets/SpentApp.png';
 import imgSatayPayment from './assets/SatayPayment.png';
 import img26simracing from './assets/26SimRacing.png';
@@ -7,12 +7,12 @@ import img26simracing from './assets/26SimRacing.png';
 const Projects = () => {
   const projectData = [
     {
-      title: "Custom Book",
-      description: "Replica of some social media features on the internet.",
-      techStack: ["Html", "CSS", "JavaScript"],
-      image: imgCustomBook, 
-      liveLink: "https://custom-book.vercel.app/", 
-      githubLink: "https://github.com/Fajar-Iannur/Custom-Book",
+      title: "GloMo Eco",
+      description: "Enterprise-Grade Carbon Footprint SaaS.",
+      techStack: ["React", "Tailwind CSS", "Supabase", "Deno Edge Functions", "Paddle Billing"],
+      image: Glomo, 
+      liveLink: "https://glo-mo-eco.vercel.app/", 
+      githubLink: "https://github.com/Fajar-Iannur/GloMo-Eco",
       status: "Completed"
     },
     {
