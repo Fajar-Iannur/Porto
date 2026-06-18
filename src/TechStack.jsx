@@ -8,24 +8,23 @@ import { GithubCopilot } from '@lobehub/icons';
 
 const TechStack = () => {
   const technologies = [
-    { name: 'HTML5', icon: <FaHtml5 />, color: 'group-hover:text-orange-500' },
-    { name: 'CSS3', icon: <DiCss3Full />, color: 'group-hover:text-blue-500' },
-    { name: 'JavaScript', icon: <IoLogoJavascript />, color: 'group-hover:text-yellow-400' },
-    { name: 'React', icon: <FaReact />, color: 'group-hover:text-cyan-400' },
-    { name: 'Tailwind', icon: <SiTailwindcss />, color: 'group-hover:text-teal-400' },
-    // Barisan AI Tools
-    { name: 'Gemini AI', icon: <SiGooglegemini />, color: 'group-hover:text-blue-400' },
-    { name: 'Claude', icon: <Claude />, color: 'group-hover:text-amber-600' },
-    { name: 'Copilot', icon: <GithubCopilot  />, color: 'group-hover:text-white' },
+    { name: 'HTML5', icon: <FaHtml5 />, color: 'text-orange-500' },
+    { name: 'CSS3', icon: <DiCss3Full />, color: 'text-blue-500' },
+    { name: 'JavaScript', icon: <IoLogoJavascript />, color: 'text-yellow-500' },
+    { name: 'React', icon: <FaReact />, color: 'text-sky-400' },
+    { name: 'Tailwind', icon: <SiTailwindcss />, color: 'text-teal-400' },
+    { name: 'Gemini AI', icon: <SiGooglegemini />, color: 'text-blue-500' },
+    { name: 'Claude', icon: <Claude />, color: 'text-amber-600' },
+    { name: 'Copilot', icon: <GithubCopilot />, color: 'text-slate-800' },
   ];
 
   return (
     <section id="tech-stack" className="py-20 px-6 max-w-7xl mx-auto">
       <div className="mb-12 text-center md:text-left">
-        <h3 className="text-cyan-400 font-mono mb-2 tracking-[0.3em] uppercase text-sm">
+        <h3 className="text-sky-600 font-mono mb-2 tracking-[0.3em] uppercase text-sm font-bold">
           / Tech Stack & AI Tools
         </h3>
-        <h2 className="text-3xl md:text-4xl font-bold text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
           My Arsenal
         </h2>
       </div>
@@ -34,17 +33,17 @@ const TechStack = () => {
         {technologies.map((tech, index) => (
           <div 
             key={index}
-            className="group relative bg-[#050a10] border border-cyan-500/20 rounded-xl p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-[0_0_20px_var(--color-cyan-400)] cursor-pointer"
+            className="group relative bg-sky-50 border border-sky-100 rounded-xl p-8 flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:-translate-y-2 hover:border-sky-300 hover:shadow-[0_10px_20px_rgba(2,132,199,0.1)] cursor-pointer"
           >
-            <div className={`text-6xl text-gray-500 transition-colors duration-300 ${tech.color}`}>
+            <div className={`text-6xl transition-transform duration-300 group-hover:scale-110 ${tech.color}`}>
               {tech.icon}
             </div>
-            
-            <span className="text-gray-300 font-medium tracking-wider group-hover:text-white transition-colors text-center">
+            <span className="text-slate-700 font-medium tracking-wider group-hover:text-sky-700 transition-colors text-center">
               {tech.name}
             </span>
             
-            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-cyan-400 group-hover:w-1/2 transition-all duration-300 rounded-t-md"></div>
+            {/* Animasi Garis Bawah pas di hover */}
+            <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-1 bg-sky-400 group-hover:w-1/2 transition-all duration-300 rounded-t-md"></div>
           </div>
         ))}
       </div>
